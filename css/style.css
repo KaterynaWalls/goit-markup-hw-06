@@ -115,6 +115,7 @@ p {
 .main-section {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/hero-tabl-2x.jpg);
 }   
+    }
 .main-section-title {
     font-size: 56px;
     line-height: 60px; 
