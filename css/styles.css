@@ -134,10 +134,6 @@ p {
     border: none;
 }
 
-.open-menu-btn:hover,
-.open-menu-btn:focus {
-    outline: none;
-}
 /*MOBILE MENU*/
 .mobile-menu {
     width: 100%;
@@ -177,16 +173,26 @@ margin-bottom: 40px;
     letter-spacing: 0.02em;
     color: #2e2f42;
 }
-.current {
+
+.mobile-current {
     color: #404bbf;
 }
-
+.mobile-current::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    background: #404bbf;                   
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px ;
+}
 .mobile-contacts-list {
     display: flex;
     gap: 40px;
 }
 .mobile-contacts-link {
-
 color: #434455;
 font-size: 16px;
 line-height: 1.5;
