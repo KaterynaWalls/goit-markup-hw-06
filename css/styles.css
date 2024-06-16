@@ -138,6 +138,7 @@ p {
 .open-menu-btn:focus {
     outline: none;
 }
+/*MOBILE MENU*/
 .mobile-menu {
     width: 100%;
     height: 100%;
@@ -185,6 +186,23 @@ margin-bottom: 40px;
     gap: 40px;
 }
 .mobile-contacts-link {
+
+color: #434455;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+list-style: none;
+text-decoration: none;
+text-decoration-line: none;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contacts-link:hover,
+.contacts-link:focus {
+color: #404bbf
+}
+.mobile-contacts-link:hover,
+.mobile-contacts-link:focus {
+    color: #404bbf
 }
              /* Section one hero */
 .main-section {
