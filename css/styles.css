@@ -54,6 +54,7 @@ display: flex;
 .navigation {
     display: flex;
     align-items: center;
+    width: 261px
 }
 .header-logo {
     font-family: Raleway, sans-serif;
@@ -596,7 +597,7 @@ display: flex;
     margin-bottom: 16px;
     text-align: center;
 }
-.social-media-list { justify-content: center;
+.social-media-list { 
     display: flex;
     gap: 16px;
     
@@ -919,11 +920,11 @@ display: flex;
 /* Media min-width: 768px*/
 @media  screen and (min-width: 768px) {
 .container {
-        width: 768px;
-        margin: 0 auto;
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0 16px;
 }
 .header {
-    background-color:#fff;
     display: flex;
     border-bottom: 1px solid #E7E9FC;
     box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
@@ -932,7 +933,6 @@ display: flex;
 .header-container {
     display: flex;
     align-items: center;
-
 }
 .navigation {
     display: flex;
@@ -950,7 +950,6 @@ display: flex;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em; 
-    margin-right: 120px;
     gap: 40px;
 }
 .nav-link {
@@ -958,7 +957,6 @@ display: flex;
     color: #2e2f42; 
     padding: 24px 0;
     display: block;
-    
 }
 .nav-link.current  {
     position: relative;
@@ -980,28 +978,24 @@ display: flex;
  .nav-link:focus {
     color: #404bbf;
 }
-
 .contacts {
-    color: #434455;
     font-style: normal;
-    display: flex;
-    flex-direction: column;
-    margin-top: 16px;
-    margin-bottom: 16px;
+    display: block;
+    margin-left: auto;
 }
 .contacts-list {
     display: flex;
     flex-direction: column;
+    gap: 12px;
+}
+.contacts-link-item {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: #434455;
     list-style: none;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.7;
     letter-spacing: 0.04em;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);  
-    gap: 12px;
-}
-.contacts-link-item {
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 } 
 .contacts-link {
       color: #434455;
@@ -1744,7 +1738,7 @@ display: flex;
 /*Media min-width: 1158px*/
 @media screen and (min-width: 1158px) {
 .container {
-    width: 1158px;
+    max-width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
